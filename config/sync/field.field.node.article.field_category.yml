@@ -1,4 +1,4 @@
-uuid: aa1c6e7f-6ba7-486a-946b-c5656a362362
+uuid: 83aa82a8-16f0-4057-8e7a-68a3ebbef551
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ entity_type: node
 bundle: article
 label: Category
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
