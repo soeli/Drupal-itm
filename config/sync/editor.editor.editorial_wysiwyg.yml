@@ -1,4 +1,4 @@
-uuid: f6afd48f-e271-4ef9-8847-1edd51c5e549
+uuid: d9da6c08-05da-48bf-9e66-6d8b8cf7f8c5
 langcode: en
 status: true
 dependencies:
@@ -16,12 +16,12 @@ settings:
           name: Formatting
           items:
             - Bold
+            - Underline
             - Italic
-            - Format
-            - JustifyBlock
+            - JustifyLeft
             - JustifyCenter
             - JustifyRight
-            - JustifyLeft
+            - JustifyBlock
         -
           name: Links
           items:
@@ -41,8 +41,8 @@ settings:
           name: Tools
           items:
             - Source
-            - Undo
-            - Redo
+            - Copy
+            - Cut
   plugins:
     language:
       language_list: un

@@ -1,4 +1,4 @@
-uuid: 6747913a-ef0b-4665-adf5-e38398c81174
+uuid: ec570236-1431-4095-b84d-9e7bfe957828
 langcode: en
 status: true
 dependencies:
@@ -18,7 +18,7 @@ settings:
             - Bold
             - Italic
             - Underline
-            - JustifyBlock
+            - Strike
         -
           name: Links
           items:
@@ -38,6 +38,15 @@ settings:
           name: Tools
           items:
             - Source
+            - Copy
+            - Cut
+        -
+          name: Aling
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
   plugins:
     language:
       language_list: un
