@@ -1,0 +1,17 @@
+
+drupal_itm_demos.subscribe_form:
+  path: '/drupal_itm_demos/form/subscribe'
+  defaults:
+    _form: '\Drupal\drupal_itm_demos\Form\SubscribeForm'
+    _title: 'SubscribeForm'
+  requirements:
+    _access: 'TRUE'
+  
+
+drupal_itm_demos.demo_controller_testTheme:
+  path: '/test-theme'
+  defaults:
+    _controller: '\Drupal\drupal_itm_demos\Controller\DemoController::testTheme'
+    _title: 'testTheme'
+  requirements:
+    _permission: 'access content'

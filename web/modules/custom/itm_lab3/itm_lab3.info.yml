@@ -1,0 +1,5 @@
+name: 'ITM lab3'
+type: module
+description: 'Demo for lab3'
+core: 8.x
+package: 'Custom'
