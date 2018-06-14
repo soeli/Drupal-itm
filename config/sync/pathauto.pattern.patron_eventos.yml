@@ -1,0 +1,22 @@
+uuid: 4f5e7ac4-b944-4979-94fb-ce5e9275bfd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: patron_eventos
+label: 'Patron Eventos'
+type: 'canonical_entities:node'
+pattern: '[node:field_date:date:html_year]/[node:field_date:date:html_month]/[current-page:title]'
+selection_criteria:
+  588187da-6de4-4868-a475-3b977cfa10b0:
+    id: node_type
+    bundles:
+      eventos: eventos
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 588187da-6de4-4868-a475-3b977cfa10b0
+selection_logic: and
+weight: -5
+relationships: {  }

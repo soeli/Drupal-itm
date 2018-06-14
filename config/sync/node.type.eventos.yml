@@ -1,0 +1,18 @@
+uuid: f9977290-d3f7-4cc4-b97b-c2d3d1f8f560
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Eventos
+type: eventos
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

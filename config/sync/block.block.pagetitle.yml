@@ -1,0 +1,18 @@
+uuid: ff75cf53-47c0-4508-a7b1-57df19d4e525
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bartik
+id: pagetitle
+theme: bartik
+region: featured_top
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Information Block'
+  provider: core
+  label_display: visible
+visibility: {  }

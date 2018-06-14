@@ -1,0 +1,20 @@
+uuid: 26a01855-a469-4a75-baef-a59ac7fa666f
+langcode: en
+status: true
+dependencies:
+  module:
+    - drupal_itm_demos
+  theme:
+    - drupalitm
+id: drupalitm_subscribeblock
+theme: drupalitm
+region: footer_first
+weight: 0
+provider: null
+plugin: subscribe_block
+settings:
+  id: subscribe_block
+  label: 'Subscribe form'
+  provider: drupal_itm_demos
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: 865b3072-f6ec-4010-9c95-b9aa4bddfb98
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalitm
+id: drupalitm_pagetitle
+theme: drupalitm
+region: featured_top
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Information Block'
+  provider: core
+  label_display: visible
+visibility: {  }

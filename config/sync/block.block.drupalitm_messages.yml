@@ -1,0 +1,22 @@
+uuid: e29e1114-1e5d-4195-a359-f905e524c73f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalitm
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupalitm_messages
+theme: drupalitm
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

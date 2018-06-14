@@ -1,0 +1,19 @@
+uuid: 1b375afb-c5ee-4b2c-b000-602678f5475b
+langcode: en
+status: true
+dependencies: {  }
+id: event_creator
+label: 'Event Creator'
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access in-place editing'
+  - 'create eventos content'
+  - 'create url aliases'
+  - 'delete article revisions'
+  - 'delete own eventos content'
+  - 'edit own article content'
+  - 'edit own eventos content'
+  - 'use text format editorial_wysiwyg'
+  - 'view the administration theme'

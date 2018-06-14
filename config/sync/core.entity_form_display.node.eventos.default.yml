@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.eventos.body
     - field.field.node.eventos.field_date
+    - field.field.node.eventos.field_email
     - field.field.node.eventos.field_image
     - image.style.thumbnail
     - node.type.eventos
@@ -38,6 +39,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_email:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
     region: content
   field_image:
     weight: 2

@@ -1,0 +1,22 @@
+uuid: 909aecc3-9bdc-4e21-98eb-b4fa391c566c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: patron_articulos
+label: 'Patron Artículos'
+type: 'canonical_entities:node'
+pattern: '[node:field_category]/[current-page:title]'
+selection_criteria:
+  127d52a6-1841-4b27-9b71-8be7a3311695:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 127d52a6-1841-4b27-9b71-8be7a3311695
+selection_logic: and
+weight: -5
+relationships: {  }
