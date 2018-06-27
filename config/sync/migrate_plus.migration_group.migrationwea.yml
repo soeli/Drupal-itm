@@ -1,0 +1,10 @@
+uuid: 611c96b7-6962-41cf-a993-b6d549f665cc
+langcode: en
+status: true
+dependencies: {  }
+id: migrationwea
+label: migrationWea
+description: ''
+source_type: csv
+module: null
+shared_configuration: null

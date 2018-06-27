@@ -1,0 +1,5 @@
+id,username,email,full_name,roles
+1,user1,user1@example.com,First User,
+2,user2,user2@example.com,Second User,editor
+3,user3,user3@example.com,Third User,administrator
+4,user4,user4@example.com,Fourth User,"editor,administrator"

@@ -1,0 +1,59 @@
+id: articles
+migration_group: default
+label: Articles
+source:
+  plugin: csv
+  path: modules/custom/drupal_itm_demos/csv/articles.csv
+  header_row_count: 1
+  keys:
+    - id
+  delimiter: ','
+  enclosure: '"'
+  column_names:
+    -
+      id: ID
+    -
+      author: Author
+    -
+      title: Title
+    -
+      body: Body
+    -
+      tags: Tags
+process:
+  title: title
+  status:
+    -
+      plugin: default_value
+      default_value: 1
+  type:
+    -
+      plugin: default_value
+      default_value: article
+  body/value: body
+  body/format:
+    -
+      plugin: default_value
+      default_value: full_html
+  uid:
+    -
+      plugin: migration_lookup
+      migration: Users
+      source: author
+  field_tags:
+    -
+      plugin: explode
+      source: tags
+      delimiter: ","
+    -
+      plugin: entity_generate
+      value_key: name
+      budle_key: vid
+      bundle: tags
+      entity_type: taxonomy_term
+      ignore_case: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - users

@@ -1,0 +1,37 @@
+id: users
+label: Users
+migration_group: default
+source:
+  plugin: csv
+  path: modules/custom/drupal_itm_demos/csv/users.csv
+  header_row_count: 1
+  keys:
+    - id:
+    delimiter: ','
+    enclosure: '"'
+    column_names:
+        -
+         id: ID
+        -
+         username: Username
+        -
+         email: Email
+        -
+         full_name: 'Full Name'
+        -
+         roles: 'Roles'
+process:
+  name: username
+  mail: email
+  field_full_name: full_name
+  status:
+    -
+      plugin: default-value
+      default_value: 1
+  roles:
+    -
+      plugin: explode
+      source: roles
+      delimiter: ','
+destination:
+  plugin: 'entity:user'

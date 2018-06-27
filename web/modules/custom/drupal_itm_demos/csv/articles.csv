@@ -1,0 +1,5 @@
+id,author,title,body,tags
+1,1,Articulo 1,Lorem ipsum,tag1
+2,1,Articulo 2,Lorem ipsum,tag2
+3,2,Articulo 3,Lorem ipsum,"tag1,tag2"
+4,3,Articulo 4,Lorem ipsum,"tag1,tag2,tag3"
